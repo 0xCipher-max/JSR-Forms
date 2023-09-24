@@ -1,0 +1,226 @@
+.Login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.Login > .heading {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+.Login > .noaccount {
+	font-size: 1.1rem;
+	margin-top: 0.5rem;
+	font-weight: 500;
+}
+
+.Login > .registerbtn {
+	text-decoration: none;
+	color: #ff432a;
+	font-size: 1.1rem;
+	font-weight: 500;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.Login > .registerbtn:hover {
+	font-weight: 700;
+}
+
+.Login > .loginbox {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.Login > .loginbox > .emailheading {
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.Login > .loginbox > .emailHolder {
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid black;
+	padding-bottom: 0.35rem;
+}
+
+.Login > .loginbox > .emailHolder:focus-within {
+	border-color: #ff432a;
+}
+
+.Login > .loginbox > .emailHolder > .login-email {
+	color: black;
+	font-size: 1rem;
+}
+
+.Login > .loginbox > .emailHolder > .emailarea {
+	outline: none;
+	border: none;
+	padding-left: 0.5rem;
+	font-size: 1rem;
+	color: black;
+	width: 100%;
+}
+.login
+	> .rightside
+	> .child
+	> .loginbox
+	> .emailHolder
+	> .emailarea::placeholder {
+	color: black;
+}
+.Login > .loginbox > .passwordheading {
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.Login > .loginbox > .passwordHolder {
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid black;
+	padding-bottom: 0.25rem;
+}
+
+.Login > .loginbox > .passwordHolder:focus-within {
+	border-color: #ff432a;
+}
+
+.Login > .loginbox > .passwordHolder > .login-password {
+	color: black;
+	font-size: 1rem;
+}
+
+.Login > .loginbox > .passwordHolder > .passwordarea {
+	outline: none;
+	border: none;
+	padding-left: 0.6rem;
+	font-size: 1rem;
+	color: black;
+	width: 100%;
+}
+
+.login
+	> .rightside
+	> .child
+	> .loginbox
+	> .passwordHolder
+	> .passwordarea::placeholder {
+	color: black;
+}
+
+.Login > .extraDetails {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.Login > .extraDetails > .rememberMecheck {
+	accent-color: #ff432a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.Login > .extraDetails > .rememberMecheck > input {
+	cursor: pointer;
+}
+
+.Login > .extraDetails > .rememberMecheck > label {
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.Login > .extraDetails > .forgotPassword {
+	text-decoration: none;
+	color: black;
+	font-size: 0.8rem;
+}
+
+.Login > .extraDetails > .forgotPassword:hover {
+	color: #ff432a;
+}
+
+.Login > .loginbtn {
+	width: 100%;
+	margin-top: 3rem;
+	padding: 0.75rem;
+	border-radius: 50px;
+	background-color: #ff432a;
+	border: none;
+	color: white;
+	font-weight: 500;
+	box-shadow: 0px 4px 26px 2px #00000040;
+	cursor: pointer;
+}
+
+.Login > .loginbtn:hover {
+	box-shadow: 0px 4px 26px 2px #0000005d;
+}
+
+.Login > .loginbtn:disabled {
+	background-color: grey;
+}
+
+.Login > .otheroption {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.Login > .otheroption > p {
+	color: #b5b5b5;
+	font-weight: 500;
+	margin-top: 1.2rem;
+	font-size: 00.8rem;
+}
+
+.Login > .otheroption > .otheroptionimg {
+	margin-top: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.Login > .otheroption > .otheroptionimg > img {
+	width: 2.5rem;
+	height: 2.5rem;
+	cursor: pointer;
+}
+.Login > .errormsg {
+	color: #ff432a;
+	position: absolute;
+	right: 10vw;
+	margin-top: 0.5vw;
+}
+
+.pass {
+	display: flex;
+}
+
+.eyeclose1 {
+	width: 14px;
+	height: 12.09px;
+	min-width: 14px;
+	min-height: 12.09px;
+	max-width: 14px;
+	max-height: 12.09px;
+}
+
+@media only screen and (max-width: 426px) {
+	.Login > .loginbtn {
+		margin-top: 5rem;
+	}
+	.Login > .otheroption {
+		margin-bottom: 2rem;
+	}
+}
